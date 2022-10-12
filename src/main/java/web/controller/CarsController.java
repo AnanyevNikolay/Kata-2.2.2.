@@ -13,7 +13,7 @@ import java.util.List;
 @Controller
 public class CarsController {
 
-    CarService carService = new CarServiceImpl();
+    private CarService carService = new CarServiceImpl();
 
     @GetMapping(value = "/cars")
     public String getCarList(@RequestParam(value = "count", required = false) Integer count,
